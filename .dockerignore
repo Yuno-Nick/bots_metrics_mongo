@@ -1,0 +1,8 @@
+.git
+.env
+.env.prod
+__pycache__
+*.pyc
+.venv
+venv
+no_subir

@@ -19,10 +19,12 @@ def get_client() -> MongoClient:
         "tls": True,
         "tlsCAFile": TLS_CA_FILE,
         "tlsAllowInvalidHostnames": True,
+        "directConnection": True,
+        "retryWrites": False,
     }
     if not os.path.exists(TLS_CA_FILE):
         # Local dev without TLS
-        kwargs = {}
+        kwargs = {"directConnection": True, "retryWrites": False}
     return MongoClient(MONGO_URI, **kwargs)
 
 
