@@ -5,6 +5,4 @@ venv/
 .venv/
 __pycache__/
 *.pyc
-.streamlit/
-certs/
 no_subir/
