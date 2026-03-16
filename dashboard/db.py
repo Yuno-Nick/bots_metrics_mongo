@@ -9,7 +9,7 @@ import pandas as pd
 import streamlit as st
 from pymongo import MongoClient
 
-from dashboard.config import AGENTS, CACHE_TTL, MONGO_DB, MONGO_URI, TLS_CA_FILE
+from config import AGENTS, CACHE_TTL, MONGO_DB, MONGO_URI, TLS_CA_FILE
 
 
 @lru_cache(maxsize=1)

@@ -4,14 +4,14 @@ from datetime import timedelta
 
 import streamlit as st
 
-from dashboard.charts import (
+from charts import (
     bar_chart,
     format_cost,
     line_chart,
     pie_chart,
     stacked_bar,
 )
-from dashboard.db import (
+from db import (
     get_channel_distribution,
     get_conversation_counts,
     get_cost_summary,
