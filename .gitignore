@@ -1,0 +1,10 @@
+.env
+.env.prod
+.DS_Store
+venv/
+.venv/
+__pycache__/
+*.pyc
+.streamlit/
+certs/
+no_subir/
